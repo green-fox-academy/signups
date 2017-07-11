@@ -4,14 +4,14 @@ importScripts('sw-toolbox.js');
 'use strict';
 
 toolbox.precache([
-	'/index.html', 
-	'/css/site.css', 
-	'/app.js',
-	'/clipboard.min.js',
-	'/assets/green_fox_logo.png',
-	'/assets/apocolypse.svg',
-	'/assets/close-icon.svg',
-	'/assets/list-icon.svg',
+	'index.html', 
+	'css/site.css', 
+	'app.js',
+	'clipboard.min.js',
+	'assets/green_fox_logo.png',
+	'assets/apocolypse.svg',
+	'assets/close-icon.svg',
+	'assets/list-icon.svg',
 ]);
 
 toolbox.router.default = toolbox.cacheFirst;
