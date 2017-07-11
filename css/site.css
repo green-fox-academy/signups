@@ -73,6 +73,7 @@ article.layer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	line-height: 3rem;
 	font-size: 3rem;
 	transition: all 0.3s ease;
 	opacity: 1;

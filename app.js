@@ -85,6 +85,14 @@ function errorCheck(name, email) {
 	return res;
 }
 
+function clearWorkers() {
+	navigator.serviceWorker.getRegistrations().then(function(registrations) {
+		for(let registration of registrations) {
+			registration.unregister();
+		} 
+	});
+}
+
 class GlitchyText {
 
 	constructor(id) {
