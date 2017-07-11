@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Signups</title>
+	<link rel="stylesheet" type="text/css" href="css/site.css">
+</head>
+<body>
+	<img src="assets/green_fox_logo.png">
+
+	<form>
+		<input type="text" name="" id="name" placeholder="Teljes név">
+		<input type="email" name="" id="email" placeholder="E-mail cím">
+	</form>
+
+	<article class="success layer hidden"><h1>Köszönjük :)</h1></article>
+	<article class="data layer hidden">
+		<h1>Feliratkozók listája</h1>
+		<textarea name="" id="sign-ups"></textarea>
+		<button id="copy" data-clipboard-target="#sign-ups">Másolás vágólapra</button>
+		<img class="close" src="assets/close-icon.svg" alt="">
+		<img id="nuke" src="assets/apocolypse.svg" alt="">
+	</article>
+
+	<button id="add-user">Hozzáadás</button>
+
+	<img src="assets/list-icon.svg" alt="" id="data-button">
+
+	<script type="text/javascript" src="clipboard.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<!--<script src="node_modules/sw-toolbox/companion.js" data-service-worker="sworker.js"></script>
+	<script type="text/javascript">
+		navigator.serviceWorker.register('sworker.js');
+	</script>-->
+</body>
+</html>
